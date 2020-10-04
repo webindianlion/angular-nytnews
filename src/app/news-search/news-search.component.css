@@ -1,0 +1,8 @@
+.searchInput {
+    max-width: 200px;
+    margin-right: 20px;
+}
+.inputContainer {
+    display: flex;
+    justify-content: center;
+}

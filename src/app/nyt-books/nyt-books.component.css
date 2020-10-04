@@ -1,0 +1,8 @@
+.newsGridChild { width: 240px;}
+.newsGridChild h3 { text-align: center; }
+.imgMainC { text-align: center; }
+.imgMain {
+    height: initial;
+    width: 150px;
+}
+.newsGridChild h3 { font-weight: bold; }

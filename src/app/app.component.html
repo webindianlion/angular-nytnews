@@ -1,0 +1,10 @@
+<div class="header">
+    <span class="logo"><i class="fa fa-info"></i> DevelopsUI</span>
+      <ul class="navTop">
+        <li *ngFor="let menu of topMenu"> <a routerLink={{menu.link}}  routerLinkActive="active"> {{menu.name}} </a> </li>        
+      </ul>      
+  </div>
+<br><br>
+  <h2 class="text-center pageTitle">These News Articals are from <b>https://www.nytimes.com/</b>.</h2>
+<p class="text-center">and this App is only for testing purpous.</p>
+<router-outlet></router-outlet>

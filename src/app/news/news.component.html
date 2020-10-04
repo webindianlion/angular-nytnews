@@ -1,0 +1,8 @@
+<br><br>
+<h1 class="text-center loading" *ngIf="!results">Loading....</h1>
+<div class="newsGrid">
+<div  class="newsGridChild" *ngFor="let news of results">
+    <h3> {{news.title}} </h3>
+    <span class="imgMainC"><img class="imgMain" src="{{news.media[0]['media-metadata'][1].url}}" alt=""></span>
+</div>
+</div>

@@ -1,0 +1,16 @@
+<br><br>
+<p class="text-center inputContainer">
+    <!-- <input type="text" class="form-control searchInput" name="" id="" [(ngModel)]="searchArtical" value="" > -->
+    <input type="text" class="form-control searchInput" name="" id="" value="" >
+    <button  class="btn btn-primary" (click)="searchNews()">Search NEWS</button>
+</p>
+
+<br><br>
+<h1 class="text-center loading" *ngIf="!response">Loading....</h1>
+<div class="newsGrid">
+<div  class="newsGridChild" *ngFor="let item of response">
+    <h3> {{item.headline.main}} </h3>
+    <span class="imgMainC"><img class="imgMain" src="https://static01.nyt.com/{{item.multimedia[0].url}}" alt=""></span>
+    
+</div>
+</div>
